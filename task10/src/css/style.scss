@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+        width: 150px;
+    }
+    .box1 {
+        background: #f00;
+        height: 120px;
+    }
+    .box2 {
+        background: #000;
+        height: 100px;
+    }
+    .box3 {
+        background: #00f;
+        height: 40px;
+    }
+    .box4 {
+        background: #0f0;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        align-items: flex-start;
+
+    }
+    .box4{
+    	order:-1;
+    	margin-bottom:20px;
+    }
+
+}
